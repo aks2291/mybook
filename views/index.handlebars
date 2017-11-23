@@ -1,0 +1,26 @@
+{{#if user}}
+<h2>Feeds</h2>
+<ul>
+ {{#each location}}
+ <div>
+   <h3>{{title}}</h3>
+   {{#if message}}
+   <p>{{content}}</p>
+   {{/if}}
+   {{#if image}}
+   <img src="{{content}}" width="50%" height="50%"> 
+   {{/if}}
+   {{#if video}}
+   <video width="50%" height="50%" controls>
+     <source src="{{content}}" type="video/mp4">
+     Your browser does not support video tag.
+   </video>
+   {{/if}}
+   <p>Posted By: {{postedBy}}</p>
+   <p style="color:grey;font-size:60%;">{{timestamp}}</p>
+ </div>
+ {{/each}}
+ </ul>
+{{else}}
+<h1> You are not logged in.</h1>
+{{/if}}

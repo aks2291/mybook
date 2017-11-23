@@ -1,0 +1,31 @@
+{
+  "name": "mybook",
+  "version": "1.0.0",
+  "description": "MyBook social networking app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validation": "^1.0.2",
+    "express-validator": "*",
+    "joi": "^13.0.2",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mongoose-unique-validator": "^1.0.6",
+    "multer": "^1.3.0",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "author": "Aviansh Singh",
+  "license": "ISC"
+}
