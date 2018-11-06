@@ -10,7 +10,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://mybookgrp8db:3hQPlq9d6z4S5VZZ82QuhDaS1xab0jN9xGA7sNhYYGZTgEJbtlOrMdMZ5AujbYc1wEXcAPEWtBISwijd7w9w0A==@mybookgrp8db.documents.azure.com:10250/mean?ssl=true&sslverifycertificate=false',{
+mongoose.connect(localhost,{
 	useMongoClient: true
 });
 var db = mongoose.connection;
